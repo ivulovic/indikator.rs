@@ -1,0 +1,29 @@
+header.main-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  nav ul{
+    display: flex; 
+    flex-direction: row;
+    li{
+      list-style: none;
+      display: inline-block;
+      a{
+        display: block;
+        text-decoration: none;
+        color: #9e9e9e;
+        font-weight: 500;
+        padding: 10px;
+        transition: all 0.3s ease;
+        &.active{
+          color: #222;
+        }
+      }
+      &:last-child a{
+        padding-right: 0px;
+      }
+    }
+  }
+}
