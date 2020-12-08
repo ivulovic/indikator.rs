@@ -1,0 +1,32 @@
+.home-page{
+  .content-search{
+    margin: 75px auto 0px auto;
+  }
+  .main-logo{
+    .logo-wrapper{
+      margin: 0 auto;
+    }
+    h1{
+      font-weight: 400;
+      text-align: center;
+      margin: 25px 0px 25px 0px;
+      color: #e44345;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+      // text-transform: uppercase;
+    }
+  }
+  .page-title{
+    font-weight: 400;
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+    // margin: 100px 0px 25px 0px;
+  }
+  .page-subtitle{
+    font-weight: 400;
+    text-align: center;
+    margin: 25px 0px;
+    color: #9c9898;
+    margin: 0px 0px 50px 0px;
+  }  
+}

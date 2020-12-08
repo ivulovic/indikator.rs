@@ -14,14 +14,10 @@ export default function Logo({ size = 'normal' }) {
 
       <div class="red-background">
       </div>
-      <div class="white-patch">
-      </div>
+      {/* <div class="white-patch"></div>
       <div class="logo">
-        {/* <!-- 		INDIKATOR -->
-    <!--     <span>COVID</span> -->
-    <!--     <span>ИНДИКАТОР</span> --> */}
         <p>Индикатор</p>
-      </div>
+      </div> */}
       <div class="black-shadow">
       </div>
     </div>

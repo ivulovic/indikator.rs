@@ -1,23 +1,24 @@
 import { NavLink as Link } from "react-router-dom";
 import Logo from "../Logo";
+import SearchInput from "../SearchInput";
 import './index.scss';
 
-export default function MainHeader() {
-  return <header className="main-header">
-    <div>
-      <Link exact to="/">
-        <Logo size="small" />
-      </Link>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <Link exact to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/404">404</Link>
-        </li>
-      </ul>
-    </nav>
-  </header>
+export default function MainHeader({ onNavigate }) {
+  return <div className="main-header-wrapper">
+    <header className="main-header">
+      <div>
+        <Link exact to="/">
+          <Logo size="small" />
+        </Link>
+      </div>
+      <SearchInput onSelect={onNavigate} />
+      {/* <nav>
+        <ul>
+          <li>
+            <Link to="/covid">КОВИД 19</Link>
+          </li>
+        </ul>
+      </nav> */}
+    </header>
+  </div>
 }

@@ -3,24 +3,24 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import MainHeader from "./components/MainHeader";
 import HomePage from './containers/Home';
+import SearchPage from './containers/Search';
 import NotFoundPage from './containers/NotFound';
 
 function App() {
   return (
     <Router>
-      <div>
-        <MainHeader />
-        <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route>
-            <NotFoundPage />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="/search">
+          <SearchPage />
+        </Route>
+        <Route>
+          <NotFoundPage />
+        </Route>
+      </Switch>
     </Router>
   );
 }
