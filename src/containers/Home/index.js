@@ -1,8 +1,7 @@
-import { withRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { withRouter } from 'react-router-dom';
 import Logo from '../../components/Logo';
 import RecentSearches from '../../components/RecentSearches';
 import SearchInput from '../../components/SearchInput';
-
 import './index.scss';
 
 function HomePage(props) {
